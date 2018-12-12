@@ -452,5 +452,6 @@ if __name__ == '__main__':
     amqp_uri = 'amqp://teko-dev:9BIdT6KGRFsM23b9j86e@brisk-pigeon.rmq.cloudamqp.com/teko-dev'
     connector = RESTConnector()
     connector.get_parameters_from_amqp_uri(amqp_uri)
-    print(connector.get_queue(vhost='teko-dev', name='celery', get_binding=True))
+    result = connector.get_queue(vhost='teko-dev', name='evt-teko.om-payment.refund.cmd.create--is.sales_invoice.sales_return_invoice', get_binding=True)
+    print(json.dumps(result))
     exit(1)
