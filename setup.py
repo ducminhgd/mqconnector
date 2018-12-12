@@ -13,7 +13,7 @@ setup(
     name='mqconnector',
     version=mqconnector.__version__,
     packages=['mqconnector', ],
-    url='',
+    url='https://github.com/ducminhgd/mqconnector',
     license='GNU General Public License',
     author=mqconnector.__author__,
     author_email=mqconnector.__email__,
